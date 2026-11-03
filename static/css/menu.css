@@ -1,0 +1,218 @@
+/* ==========================================================================
+   THE CUTTING TEA - SIMPLE & ELEGANT MINIMALIST MENU STYLESHEET
+   ========================================================================== */
+
+.menu-page {
+    background: #FFFFFF;
+    padding-bottom: 90px;
+}
+
+/* Header */
+.menu-hero-header {
+    background: #FFFFFF;
+    padding: 56px 24px 36px;
+    text-align: center;
+    border-bottom: 1px solid #E1EBE2;
+}
+
+.menu-hero-content {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.cozy-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1E6B37;
+    margin-bottom: 8px;
+}
+
+.menu-hero-content h1 {
+    font-family: var(--font-heading, Georgia, serif);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #122416;
+    margin: 0 0 6px;
+}
+
+.cozy-note {
+    font-size: 0.98rem;
+    color: #334E39;
+    margin-bottom: 24px;
+}
+
+/* Sticky Filter Bar */
+.sticky-filter-bar {
+    position: sticky;
+    top: 84px;
+    z-index: 900;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #E1EBE2;
+    padding: 12px 24px;
+}
+
+.menu-tabs {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.menu-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: #334E39;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: #122416;
+}
+
+.tab-btn.active {
+    background: #133E20;
+    color: #A5D6A7;
+    font-weight: 600;
+}
+
+/* Menu Container */
+.menu-container {
+    max-width: 760px;
+    margin: 40px auto 0;
+    padding: 0 24px;
+}
+
+.menu-section {
+    margin-bottom: 52px;
+    scroll-margin-top: 160px;
+}
+
+.section-title-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #133E20;
+}
+
+.section-title-wrap h2 {
+    font-family: var(--font-heading, Georgia, serif);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #122416;
+    margin: 0;
+}
+
+.section-count {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5C7A63;
+}
+
+/* Simple Elegant List Items */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 10px;
+    border-bottom: 1px solid #F0F5F1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.18s ease;
+}
+
+.menu-item:hover {
+    background: #F7FAF7;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-family: var(--font-heading, Georgia, serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #122416;
+    transition: color 0.18s ease;
+}
+
+.menu-item:hover h3 {
+    color: #1E6B37;
+}
+
+.item-sub {
+    font-size: 0.82rem;
+    color: #5C7A63;
+    margin-top: 2px;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #C8E6C9;
+    margin: 0 8px;
+}
+
+.menu-item .price {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #133E20;
+    white-space: nowrap;
+}
+
+/* Applied by menu.js while searching or changing categories. */
+.menu-item.hidden,
+.menu-section.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-container { padding: 0 16px; margin-top: 24px; }
+    .menu-hero-header { padding: 36px 16px 24px; }
+    .menu-hero-content h1 { font-size: 2.1rem; }
+    .sticky-filter-bar {
+        top: 64px;
+        padding: 10px 16px;
+    }
+    .menu-tabs {
+        -webkit-overflow-scrolling: touch;
+        gap: 8px;
+    }
+    .tab-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    .menu-section {
+        margin-bottom: 36px;
+        scroll-margin-top: 130px;
+    }
+    .menu-item {
+        padding: 12px 6px;
+    }
+}
+
